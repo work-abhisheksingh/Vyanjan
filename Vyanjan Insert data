@@ -1,0 +1,8 @@
+insert into admin(admin_Name,admin_password, admin_mobile,admin_email) values("admin1","pwd",9876543210,"admin1@vyanjan.com"); 
+
+
+
+insert into customers(customer_name,customer_password,customer_mobile,customer_email,admin_id) values("Karan","1234",9988776655,"karan@gmail.com",1);
+insert into customers(customer_name,customer_password,customer_mobile,customer_email,admin_id) values("Rohit","4231",8988776654,"rohit@gmail.com",1);
+insert into customers(customer_name,customer_password,customer_mobile,customer_email,admin_id) values("Mohit","4232",8988776656,"mohit@gmail.com",1);
+insert into customers(customer_name,customer_password,customer_mobile,customer_email,admin_id) values("Mohan","2232",7988776656,"mohan@gmail.com",1);
