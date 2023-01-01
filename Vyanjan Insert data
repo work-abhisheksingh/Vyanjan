@@ -6,3 +6,6 @@ insert into customers(customer_name,customer_password,customer_mobile,customer_e
 insert into customers(customer_name,customer_password,customer_mobile,customer_email,admin_id) values("Rohit","4231",8988776654,"rohit@gmail.com",1);
 insert into customers(customer_name,customer_password,customer_mobile,customer_email,admin_id) values("Mohit","4232",8988776656,"mohit@gmail.com",1);
 insert into customers(customer_name,customer_password,customer_mobile,customer_email,admin_id) values("Mohan","2232",7988776656,"mohan@gmail.com",1);
+
+CREATE UNIQUE INDEX S_No
+ON customers (Cust_Id);
