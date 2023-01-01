@@ -38,6 +38,7 @@ create table carts(
      cart_id int primary key  AUTO_INCREMENT,
      order_id int,
      food_id int,
+     food_qty int,
      constraint cart_food_id foreign key(food_id) references foods(food_id)
        on update cascade
        on delete cascade,
@@ -70,7 +71,7 @@ create table foods(
      food_name varchar(50) not null,
      food_desc varchar(20) not null,
      food_price decimal(9,2) not null,
-     food_qty int,
+     
      admin_id int,
      constraint food_admin_id foreign key(admin_id) references admin(admin_id)
           on update cascade
