@@ -1,0 +1,183 @@
+# SYSTEM REQUIREMENT SPECIFICATION 
+
+
+## GENERAL DESCRIPTION 
+
+###### Product Description: 
+
+The online food ordering System is intended to provide complete solution for vendors, Consumers as well as owners  through a single Gateway using internet. It will enable vendors to put quotations for restaurants owners , customers to browse through virtual restaurant and order food online without visiting the restaurant physically.
+
+###### Problem Statement: 
+
+As online food ordering became a trend nowadays the regular hotels/restaurants are losing their customers to online brands. Customers have effortless ordering experience and saving time through ordering online. For competing with those online brands, if these hotels are providing an online portal where their customers can order through internet and get the food at their doors it will increase the number of customers.
+
+
+## SYSTEM OBJECTIVES 
+
+	To provide a Web application for online ordering of Food in an existing restaurant
+	To provide an online food ordering web site for the same shop 
+
+
+##  SYSTEM REQUIREMENTS 
+
+######	NON-FUNCTIONAL REQUIREMENTS 
+
+i.	SECURITY :
+Registered Customer will allowed to place an order. Each stakeholder will be to access system through authentication process.? System will provide access to the content , operations using Role based security (Authorization) (Permissions based on Role) Using SSL in all transactions which will be performed stakeholder. It would protect confidential information shared by system to stake holder of Shared by stakeholder to. System will internally maintain secure communication channel between Servers ( Web Servers, App Servers, database Server) Sensitive data will be always encrypted across communication. User proper firewall to protect servers from out side fishing, vulnerable attacks.
+
+
+ii.	RELIABILITY : 
+The system will backup business data on regular basis and recover in short time duration to keep system operational Continuous updates are maintained , continuous Administration is done to keep system operational. During peak hours system will maintain same user experience by managing load balancing .
+iii.	MAINATANABILITY :
+A Commercial database software will be used to maintain System data Persistence. A readymade Web Server will be installed to host online food ordering portal (Web Site) to management server capabilities. IT operations team will easily monitor and configure System using Administrative tools provided by Servers. Separate environment will be maintained for system for isolation in production, testing, and development.
+
+iv.	IMPLEMENTATION REQUIREMENT 
+
+Implementation of the system using React in front end with Spring Boot / .NET as back end and it will be used for database connectivity. And the database part is developed by MySQL. Responsive web designing is used for making the website compatible for any type of screen.
+
+
+
+v.	MODULARITY :
+System will designed and developed using reusable, independent or dependent business scenario’s in the form of modules. These modules will be loosely coupled and highly cohesive. System will contain CRM , Inventory , shopping cart, order processing, payment processing, Delivery module .
+
+vi.	SCALABILITY :
+System will be able to provide consistent user experience to stake holder as well as visitors irrespective of load.
+
+vii.	DELIVERY REQUIREMENT :
+
+The whole system is expected to be delivered in four months of time with a weekly Evaluation by the project guide.
+
+
+
+
+## FUNCTIONAL REQUIREMENTS 
+
+
+USER
+	USER LOGIN :
+
+Description of feature 
+
+This feature used by the user to login into system. A user must login with his username and password to the system after registration. If they are invalid, the user not allowed to enter the system.
+
+Functional Requirement 
+
+•	Username and password will be provided after user registration is confirmed. 
+•	Password should be hidden from others while typing it in the field 
+
+
+REGISTER NEW 
+
+	USER 
+
+Description of feature 
+
+A new user will have to register in the system by providing essential details in order to view the Menu in the system. The admin must accept new user by unblocking him.
+Functional Requirement 
+
+•	System must be able to verify and validate information. 
+•	The system must encrypt the password of the customer to provide security 
+
+
+PLACING ORDER
+
+Description of feature 
+
+The user can add the desired item into his cart by clicking add to cart option. He can view his cart by clicking on the cart button. All items added by cart can be viewed in the cart. User can remove an item from the cart by clicking remove. After confirming the items in the cart, the user can submit the cart by providing a delivery address. On successful submitting the cart will become empty.
+
+
+Functional Requirement 
+
+•	System must ensure that, only a registered customer can place orders. 
+•	Admin account should be secured so that only owner of the shop can access that account 
+
+
+ DELIVERY AGENT
+	DELIVERY AGENT  LOGIN :
+
+Description of feature 
+
+This feature used by the delivery agent to login into system. A delivery agent must login with his username and password to the system after registration. If they are invalid, the user not allowed to enter the system.
+
+Functional Requirement 
+
+•	Username and password will be provided after the delivery agent registration is confirmed. 
+•	Password should be hidden from others while typing it in the field 
+
+	DELIVER ORDER
+
+Description of feature 
+	
+	This feature used by the delivery agent to see order details to be delivered by him.
+
+Functional Requirement 
+
+•	After login , delivery agent can see order assigned to him
+•	Order status gets updated as soon as he delivers order
+
+
+
+VENDOR 
+
+	VENDOR LOGIN
+
+Description of feature 
+
+This feature used by the vendor to login into system. A vendor  must login with his username and password to the system after registration. If they are invalid, the user not allowed to enter the system.
+
+
+Functional Requirement 
+
+•	Username and password will be provided after the vendor  registration is confirmed. 
+•	Password should be hidden from others while typing it in the field 
+
+
+
+
+
+
+	RAISING QUOTATION
+
+Description of feature 
+	This feature used by vendor to raise quotation against requirement posted by admin. 
+	Vendor can submit multiple quotations as per requirement of admin
+
+Functional Requirement 
+
+•	After login , vendor can see requirement posted by admin
+•	Vendor can raise quotation , and can check its status.
+
+
+
+ADMIN 
+
+	MANAGE USER 
+
+Description of features 
+
+The administrator can add user, delete user, view user and block user
+
+
+	MANAGE PRODUCTS 
+
+Description of features 
+
+The administrator can add product, delete product, and view product.
+
+
+	MANAGE ORDER 
+
+Description of features 
+
+The administrator can view orders and delete orders.
+
+	MANAGE DELIVERIES :
+Description of features 
+
+The administrator can add delivery agent, delete delivery agent, view delivery agent and block them.
+
+	MANAGE VENDORS :
+Description of features 
+
+The administrator can add vendor, delete vendor, view vendors and block them.
+
